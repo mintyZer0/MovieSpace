@@ -48,9 +48,9 @@ nav {
     border-radius: 50%;
 }
 
-input[type="text"]:focus {
-    outline: none;
-    border-color: #E5A93B;
+.account-image:hover {
+    cursor: pointer;
+    border: 1px solid #E5A93B;
 }
 
 a {
@@ -82,6 +82,11 @@ hr {
     padding: 0.5rem 1rem;
     border: 1px solid #333;
     border-radius: 20px; 
+}
+
+#search-movies:focus {
+    outline: none;
+    border-color: #E5A93B;
 }
 
 .posts-main-window {
