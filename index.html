@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>minty's blog</title>
 </head>
@@ -10,15 +11,16 @@
     
     <header>
         <div>
+            <h1>MovieSpace</h1>
+            <div class="search-container">
+                <input id="search-movies" type="text" placeholder="Search movie posts...">
+            </div>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Browse</a>
                 <a href="#">Post</a>
             </nav>
-            <div class="search-container">
-                <input id="search-movies" type="text" placeholder="Search movie posts...">
-            </div>
-            <a href="#">Settings</a>
+            <img class="account-image img-thumbnail" src="" alr="account-image">
         </div>
 
         <hr>
@@ -26,8 +28,13 @@
     </header>
     
     <div class="posts-main-window">
-        PUT POSTS HERE
+        <div class="post-filter"></div>
+        <div class="post-card">
+            <img src="" class="post-user-profile">
+            <h2 class="post-title"> Post title here </h2>
+            <div class="post-content"></div>
+        </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
 </body>
 </html>
