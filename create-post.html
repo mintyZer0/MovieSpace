@@ -31,7 +31,7 @@
         <nav>
           <a href="index.html">Home</a>
           <a href="browse.html">Browse</a>
-          <a href="create-post.html">Post</a>
+          <a href="create-post.html">Create Post</a>
         </nav>
         <img class="account-image" src="images/pfpv2.png" alt="account-image" />
       </div>
@@ -39,51 +39,31 @@
       <hr />
     </header>
 
-    <main class="posts-main-window">
-      <div class="post-filter"></div>
-      <div class="post-card">
-        <a href="post-spiderman.html" class="stretched-link"></a>
-        <div class="post-header">
-          <img src="images/freaky-ahh-cat.jpg" class="post-user-profile-img" />
-          <div class="post-header-text">
-            <h2 class="post-title">
-              Spider-man: This movie is absolutely bonkers
-            </h2>
-            <h3 class="post-username">mintyZer0</h3>
+    <main class="container">
+      <div class="post-form d-flex justify-content-center align-items-center">
+        <form>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
           </div>
-        </div>
-        <div class="post-content">
-          <div class="post-image">
-            <img src="images/spider-man-brand-new-day.jpg" />
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Example textarea</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
           </div>
-          <div class="post-text d-none"></div>
-        </div>
-      </div>
-      <div class="post-card">
-        <a href="post-batman.html" class="stretched-link"></a>
-        <div class="post-header">
-          <img
-            src="images/horse-staring-horse.png"
-            class="post-user-profile-img"
-          />
-          <div class="post-header-text">
-            <h2 class="post-title">
-              The Batman: This movie has too many shadows
-            </h2>
-            <h3 class="post-username">mintyZer0</h3>
-          </div>
-        </div>
-        <div class="post-content">
-          <div class="post-image d-none"></div>
-          <div class="post-text">
-            This movie is crazy dark. Literally. I had to turn the brightness on
-            my screen all the way up because the sun does not exist in Gotham
-            City. Did you know that Batman is a bat? And a man? But unlike a
-            real bat, he cannot fly and he does not sleep upside down. He is
-            just a very rich guy in a Halloween costume beating people up in
-            dark alleys...
-          </div>
-        </div>
+        </form>
       </div>
     </main>
     <script
