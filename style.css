@@ -207,8 +207,6 @@ hr {
   font-size: small;
 }
 
-
-
 .browse-container {
   display: flex;
   flex-direction: column;
@@ -339,7 +337,6 @@ hr {
   opacity: 80%;
 }
 
-
 .post-page {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -389,7 +386,6 @@ hr {
   display: block;
 }
 
-
 .post-body {
   font-size: 0.9rem;
   line-height: 1.6;
@@ -401,7 +397,6 @@ hr {
   border-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 2rem;
 }
-
 
 .comments-section {
   margin-bottom: 3rem;
@@ -467,4 +462,87 @@ hr {
 
 .comment-reply {
   margin-left: 2.5rem;
+}
+
+.post-form {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  background-color: var(--bg-surface);
+  border-radius: 12px;
+  max-width: 680px;
+  min-width: 500px;
+  margin-inline: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-width: 2px;
+}
+
+.post-form form {
+  width: 100%;
+}
+
+.post-form .form-control,
+.post-form input[type="text"],
+textarea {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  caret-color: var(--accent-gold);
+  width: 100%;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.post-form .form-control::placeholder,
+.post-form textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
+.post-form textarea {
+  min-height: 160px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.post-form .form-control:hover {
+  border-color: var(--accent-gold);
+}
+
+.post-form .form-control:focus {
+  border-color: var(--accent-gold);
+  outline: none;
+  box-shadow: none;
+}
+
+.form-label {
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.post-form input[type="file"] {
+  border-style: dashed;
+  padding: 2rem;
+  border-width: 2px;
+  border-color: var(--accent-gold);
+}
+
+.post-form input[type="file"]::file-selector-button {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding-inline: 1.02rem;
+}
+
+.post-form i {
+  position: absolute;
+  inset: 0;
 }
